@@ -1,6 +1,6 @@
 {
   "name": "@bdsx/test",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "keywords": [],
@@ -8,7 +8,8 @@
   "license": "ISC",
   "bdsxPlugin": true,
   "scripts": {
-    "build": "tsc",
+    "build-plugins": "npx tsc ./plugin/index.js --outDir ./dist --allowJs --resolveJsonModule --module CommonJS",
+    "build": "npm run build-plugins && tsc",
     "watch": "tsc -w",
     "prepare": "tsc || exit 0"
   },
