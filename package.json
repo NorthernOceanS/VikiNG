@@ -1,14 +1,15 @@
 {
-  "name": "@bdsx/test",
-  "version": "1.0.0",
+  "name": "@bdsx/viking",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "BSD-3-Clause",
   "bdsxPlugin": true,
   "scripts": {
-    "build": "tsc",
+    "build-plugins": "npx tsc ./plugin/index.js --outDir ./dist --allowJs --resolveJsonModule --module CommonJS",
+    "build": "npm run build-plugins && tsc",
     "watch": "tsc -w",
     "prepare": "tsc || exit 0"
   },
