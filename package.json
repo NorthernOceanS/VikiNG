@@ -1,24 +1,32 @@
 {
   "name": "@bdsx/viking",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "BSD-3-Clause",
   "bdsxPlugin": true,
+  "files": [
+    "/dist",
+    "index.js"
+  ],
   "scripts": {
-    "build-plugins": "npx tsc ./plugin/index.js --outDir ./dist --allowJs --resolveJsonModule --module CommonJS",
-    "build": "npm run build-plugins && tsc",
+    "build-plugins": "babel .\\plugin --out-dir dist_babel --copy-files",
+    "build": "tsc",
     "watch": "tsc -w",
     "prepare": "tsc || exit 0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
     "@types/node": "^12.20.5",
     "bdsx": "file:../bdsx",
     "typescript": "^4.3.5"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "norma-core": "^0.3.1"
   }
 }

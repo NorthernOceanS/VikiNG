@@ -43,7 +43,6 @@ const lastTimeOfPlayerRequest = new Map();
         let block = serverSystem.getBlock(tickingArea.data.ticking_area, blockPosition.coordinate) as IBlock
         if (!block) throw "NZ IS JULAO!"
         let blockState = serverSystem.getComponent(block, "minecraft:blockstate")?.data
-        if (!blockState) throw "NZ IS JULAO!"
         let rotation = serverSystem.getComponent(entity, "minecraft:rotation")
         if (!rotation) throw "NZ IS JULAO!"
         return {
