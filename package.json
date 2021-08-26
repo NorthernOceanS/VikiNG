@@ -1,7 +1,7 @@
 {
   "name": "@bdsx/viking",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.4",
+  "description": "World's least popular worldedit-like plugin, now coming to bdsx! See https://docs.norma.observer/",
   "main": "index.js",
   "keywords": [],
   "author": "",
