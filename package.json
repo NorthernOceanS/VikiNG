@@ -1,6 +1,6 @@
 {
   "name": "@bdsx/viking",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "World's least popular worldedit-like plugin, now coming to bdsx! See https://docs.norma.observer/",
   "main": "index.js",
   "keywords": [],
@@ -8,7 +8,7 @@
   "license": "BSD-3-Clause",
   "bdsxPlugin": true,
   "files": [
-    "/dist/*",
+    "dist/*",
     "index.js"
   ],
   "scripts": {
