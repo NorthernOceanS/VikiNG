@@ -23,7 +23,7 @@
     "@babel/preset-env": "^7.15.0",
     "@types/node": "^12.20.5",
     "bdsx": "file:../bdsx",
-    "typescript": "^4.3.5"，
+    "typescript": "^4.3.5",
     "babel-cli": "^6.26.0",
   },
   "dependencies": {
